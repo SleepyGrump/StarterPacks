@@ -1,6 +1,6 @@
 # Starter Packs Mod
 
-Generates random starter packs. To use:
+Generates random starter packs for Backpack Hero. To use:
 
 1. Enable debugging in Mods
 2. Start a game
@@ -26,7 +26,7 @@ Starter packs:
 - Shuriken
 - Spikes
 - Structure
-- Drummer - will only work for Satchel by default
-- Musician - will only work for Satchel by default
+- Drummer - will only work for Satchel
+- Musician - will only work for Satchel
 - Rancher - will only work with a "Kin" mod such as Kirby's Pokepack
 - Farmer - will only work with a "Plant" mod such as Chuck's Plants vs Zombies Mod
