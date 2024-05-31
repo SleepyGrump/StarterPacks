@@ -1,0 +1,29 @@
+{
+  "name": "A Random Starter Pack",
+  "sprite": "Random.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "findable": false,
+  "flavor": "Chance favors the prepared mind.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "create_type": "trueRandom",
+      "create_areas": ["board"],
+      "create_items": ["Archer Starter Pack", "Berserker Starter Pack", "Cleaver Starter Pack", "Drummer Starter Pack", "Farmer Starter Pack", "Fighter Starter Pack", "Magician Starter Pack", "Musician Starter Pack", "Rancher Starter Pack", "Scratch Starter Pack", "Shuriken Starter Pack", "Spikes Starter Pack", "Structure Starter Pack"],
+      "description": "Creates a random starting pack"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

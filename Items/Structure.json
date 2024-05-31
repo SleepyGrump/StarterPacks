@@ -1,0 +1,39 @@
+{
+  "name": "Structure Starter Pack",
+  "sprite": "Structure.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "group": ["Structure"],
+  "findable": false,
+  "flavor": "Insanity consists of building major structures upon foundations which do not exist.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Structure"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 3,
+      "description": "Creates 3 common or uncommon structures"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Mercenary Essence", "Brick", "Brick", "Dirt Clump"],
+      "description": "Creates 2 Bricks, a Dirt Clump, and a Mercenary Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

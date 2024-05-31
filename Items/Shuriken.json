@@ -1,0 +1,46 @@
+{
+  "name": "Shuriken Starter Pack",
+  "sprite": "Shuriken.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "group": ["Shuriken"],
+  "findable": false,
+  "flavor": "Surrender or feel the sting of the shuriken!",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon shield"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shuriken"],
+      "number_of_items": 5,
+      "description": "Creates 5 random shuriken"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Rogue Essence", "Bag of Shurikens"],
+      "description": "Creates a Bag of Shurikens and a Rogue Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

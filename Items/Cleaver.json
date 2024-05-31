@@ -1,0 +1,64 @@
+{
+  "name": "Cleaver Starter Pack",
+  "sprite": "Cleaver.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "group": ["Cleavers"],
+  "findable": false,
+  "flavor": "Anger is like the blade of a butcher knife - very difficult to hold on to for long without harming yourself.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Cleaver"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 2,
+      "description": "Creates 2 common or uncommon cleavers"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon shield"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Cleaver"],
+      "create_rarities": ["Uncommon", "Rare"],
+      "description": "Creates a random uncommon or rare cleaver"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Armor"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon armor"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Rogue Essence"],
+      "description": "Creates a Rogue Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

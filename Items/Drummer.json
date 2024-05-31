@@ -1,0 +1,48 @@
+{
+  "name": "Drummer Starter Pack",
+  "sprite": "Drummer.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "group": ["Charmer"],
+  "findable": false,
+  "flavor": "You only get better by playing.",
+  "supported_characters": ["Satchel"],
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Drum"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 3,
+      "description": "Creates 3 common or uncommon drums"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon shield"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Bard Essence"],
+      "description": "Creates a Bard Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

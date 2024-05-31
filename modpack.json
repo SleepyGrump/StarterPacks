@@ -1,0 +1,10 @@
+{
+  "name": "Starter Packs",
+  "description": {
+    "english": "Starter packs for various types of builds."
+  },
+  "internal_name": "StarterPacks",
+  "author": "sleepygrump",
+  "version": "0.0.1",
+  "website": "https://github.com/SleepyGrump/StarterPacks/"
+}

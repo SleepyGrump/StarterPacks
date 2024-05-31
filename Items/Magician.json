@@ -1,0 +1,57 @@
+{
+  "name": "Magician Starter Pack",
+  "sprite": "Magician.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "group": ["Magic"],
+  "findable": false,
+  "flavor": "You don't get into magic. Magic gets into you.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Book"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon book"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Wand"],
+      "number_of_items": 2,
+      "description": "Creates 2 random wands"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Manastone"],
+      "create_rarities": ["Common"],
+      "number_of_items": 3,
+      "description": "Creates 3 common manastones"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Broken Ring", "Mage Essence"],
+      "description": "Creates a Broken Ring and a Rogue Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

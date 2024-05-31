@@ -1,0 +1,52 @@
+{
+  "name": "Scratch Starter Pack",
+  "sprite": "Scratch.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "group": ["Scratch"],
+  "findable": false,
+  "flavor": "Hope may or may not be a Thing with Feathers. But it's definitely a Thing with Claws.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Glove of Knives"],
+      "description": "Creates a Glove of Knives"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon shield"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Potion"],
+      "number_of_items": 3,
+      "description": "Creates 3 random potions"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Monk Essence - Level 1"],
+      "description": "Creates a Monk Essence - Level 1 (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Rancher Starter Pack",
+  "sprite": "Rancher.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "findable": false,
+  "flavor": "Until one has loved an animal a part of one's soul remains unawakened.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Kin"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 3,
+      "description": "Creates 3 common or uncommon kin (if available)"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Fish"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 2,
+      "description": "Creates 2 common or uncommon fish"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon shield"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Armor"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon Armor"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Eclectic Essence"],
+      "description": "Creates an Eclectic Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

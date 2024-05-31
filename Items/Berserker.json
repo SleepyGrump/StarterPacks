@@ -1,0 +1,39 @@
+{
+  "name": "Berserker Starter Pack",
+  "sprite": "Berserker.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "group": ["Berserker"],
+  "findable": false,
+  "flavor": "If you want to win a race you have to go a little berserk.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Melee"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 3,
+      "description": "Creates 3 common or uncommon melee weapons"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Fighter Essence", "Hatchet", "Shiv", "Hatchet", "Shiv"],
+      "description": "Creates 2 Hatchets, 2 Shivs, and a Fighter Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}
