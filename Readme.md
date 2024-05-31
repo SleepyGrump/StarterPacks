@@ -4,12 +4,11 @@ Generates random starter packs for Backpack Hero. To use:
 
 1. Enable debugging in Mods
 2. Start a game
-3. Ctrl-Shift-D
-4. Spawn Item
-5. Select "Starter Packs" from the dropdown
-6. Click an item to spawn it.
-7. Right-click the spawned item.
-8. Click "Alternate Use"
+3. Ctrl-S
+4. Select "Starter Packs" from the dropdown
+5. Click an item to spawn it.
+6. Right-click the spawned item.
+7. Click "Alternate Use"
 
 Note: No consideration is given to size currently. You'll have to figure that out yourself!
 
