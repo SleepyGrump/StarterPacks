@@ -28,8 +28,8 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Rogue Essence", "Bag of Shurikens"],
-      "description": "Creates a Bag of Shurikens and a Rogue Essence (if Chuck's RPG Classes are installed)"
+      "create_items": ["Rogue Essence", "Velvet Bag"],
+      "description": "Creates a Velvet Bag and a Rogue Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

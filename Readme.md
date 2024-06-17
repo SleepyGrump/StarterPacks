@@ -25,7 +25,11 @@ Starter packs:
 - Shuriken
 - Spikes
 - Structure
+- Holy
 - Drummer - will only work for Satchel
 - Musician - will only work for Satchel
 - Rancher - will only work with a "Kin" mod such as Kirby's Pokepack
 - Farmer - will only work with a "Plant" mod such as Chuck's Plants vs Zombies Mod
+- Gear - will only work for CR-8
+- Mythic Archer
+- Mythic Fighter

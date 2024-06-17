@@ -6,7 +6,7 @@
   "type": ["Accessory"],
   "group": ["Cleavers"],
   "findable": false,
-  "flavor": "Anger is like the blade of a butcher knife - very difficult to hold on to for long without harming yourself.",
+  "flavor": "I felt a Cleaving in my Mind- As if my Brain had split- I tried to match it- Seam by Seam- But could not make it fit.",
   "create_effects": [
     {
       "trigger": "onAlternateUse",

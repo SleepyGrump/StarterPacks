@@ -11,16 +11,6 @@
     {
       "trigger": "onAlternateUse",
       "type": "byType",
-      "create_type": "byType",
-      "create_areas": ["board"],
-      "create_types": ["Plant"],
-      "create_rarities": ["Common", "Uncommon"],
-      "number_of_items": 2,
-      "description": "Creates 2 common or uncommon plants"
-    },
-    {
-      "trigger": "onAlternateUse",
-      "type": "byType",
       "create_areas": ["board"],
       "create_types": ["Shield"],
       "create_rarities": ["Common", "Uncommon"],
@@ -31,20 +21,28 @@
       "type": "byType",
       "create_areas": ["board"],
       "create_types": ["Armor"],
-      "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon armor"
+      "create_rarities": ["Common"],
+      "description": "Creates a common armor"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Melee"],
+      "create_rarities": ["Common"],
+      "description": "Creates a common weapon"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Rose of Thorns", "Rose of Thorns"],
-      "description": "Creates 2 Rose of Thorns"
+      "create_items": ["Rose of Thorns", "Rose of Thorns", "Spiked Helmet"],
+      "description": "Creates a Spiked Helmet and 2 Rose of Thorns"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Fighter Essence"],
-      "description": "Creates a Fighter Essence (if Chuck's RPG Classes are installed)"
+      "create_items": ["Mage Essence"],
+      "description": "Creates a Mage Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

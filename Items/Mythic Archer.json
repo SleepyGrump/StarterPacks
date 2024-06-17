@@ -1,0 +1,57 @@
+{
+  "name": "Mythic Archer Pack",
+  "sprite": "MythicArcher.png",
+  "shape": ["X"],
+  "rarity": "Rare",
+  "type": ["Accessory"],
+  "group": ["Archery"],
+  "findable": false,
+  "flavor": "If you would hit the mark, you must aim a little above it.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Bow"],
+      "create_rarities": ["Rare", "Legendary"],
+      "number_of_items": 2,
+      "description": "Creates 2 rare or legendary bows"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Rare", "Legendary"],
+      "number_of_items": 2,
+      "description": "Creates 2 rare or legendary shields"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Arrow"],
+      "create_rarities": ["Rare", "Legendary"],
+      "description": "Creates a random rare or legendary arrow"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Rogue Essence", "Short Arrow", "Short Arrow"],
+      "description": "Creates two Short Arrows and a Rogue Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Gear Starter Pack",
+  "sprite": "Gear.png",
+  "shape": ["X"],
+  "rarity": "Uncommon",
+  "type": ["Accessory"],
+  "group": ["Melee"],
+  "findable": false,
+  "flavor": "To keep every cog and wheel is the first precaution of intelligent tinkering.",
+  "supported_characters": ["CR8"],
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Gear"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon gear"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Melee"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 2,
+      "description": "Creates 2 common or uncommon melee weapons"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Fighter Essence", "Big Gear", "Steel Gear", "Reverser"],
+      "description": "Creates a Steel Gear, a Big Gear, a Reverser, and a Fighter Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

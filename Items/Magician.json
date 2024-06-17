@@ -23,8 +23,8 @@
       "create_type": "byType",
       "create_areas": ["board"],
       "create_types": ["Wand"],
-      "number_of_items": 2,
-      "description": "Creates 2 random wands"
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a random common or uncommon wand"
     },
     {
       "trigger": "onAlternateUse",
@@ -32,15 +32,15 @@
       "create_type": "byType",
       "create_areas": ["board"],
       "create_types": ["Manastone"],
-      "create_rarities": ["Common"],
-      "number_of_items": 3,
-      "description": "Creates 3 common manastones"
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 2,
+      "description": "Creates 2 random common or uncommon manastones"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Broken Ring", "Mage Essence"],
-      "description": "Creates a Broken Ring and a Rogue Essence (if Chuck's RPG Classes are installed)"
+      "create_items": ["Apprentice Staff", "Broken Ring", "Mage Essence"],
+      "description": "Creates an Apprentice Staff, a Broken Ring, and a Mage Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

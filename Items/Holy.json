@@ -1,0 +1,46 @@
+{
+  "name": "Holy Starter Pack",
+  "sprite": "Holy.png",
+  "shape": ["X"],
+  "rarity": "Uncommon",
+  "type": ["Accessory"],
+  "group": ["Melee"],
+  "findable": false,
+  "flavor": "Just to be is a blessing. Just to live is holy.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "trueRandom",
+      "create_type": "trueRandom",
+      "create_areas": ["board"],
+      "create_items": ["Blessed Mace", "Blessed Sword", "Paladin's Sword"],
+      "description": "Creates a holy weapon"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 2,
+      "description": "Creates 2 common or uncommon shields"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Fighter Essence", "Blessed Shiv", "Thurible"],
+      "description": "Creates a Thurible, a Blessed Shiv, and a Fighter Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}
