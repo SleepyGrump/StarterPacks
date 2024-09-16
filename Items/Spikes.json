@@ -41,8 +41,8 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Mage Essence"],
-      "description": "Creates a Mage Essence (if Chuck's RPG Classes are installed)"
+      "create_items": ["Fighter Essence"],
+      "description": "Creates a Fighter Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

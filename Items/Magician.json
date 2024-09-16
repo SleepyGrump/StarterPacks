@@ -39,6 +39,13 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
+      "create_items": ["Manastone", "Large Manastone", "Huge Manastone"],
+      "description": "Creates three common manastones."
+    },
+
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
       "create_items": ["Apprentice Staff", "Broken Ring", "Mage Essence"],
       "description": "Creates an Apprentice Staff, a Broken Ring, and a Mage Essence (if Chuck's RPG Classes are installed)"
     }

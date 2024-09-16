@@ -18,7 +18,7 @@ Starter packs:
 
 - Archery
 - Berserker
-- Cleavers
+- Cleavers (not available for CR-8)
 - Magic
 - Melee
 - Scratch
@@ -26,10 +26,28 @@ Starter packs:
 - Spikes
 - Structure
 - Holy
-- Drummer - will only work for Satchel
-- Musician - will only work for Satchel
-- Rancher - will only work with a "Kin" mod such as Kirby's Pokepack
-- Farmer - will only work with a "Plant" mod such as Chuck's Plants vs Zombies Mod
-- Gear - will only work for CR-8
+- Drummer - Satchel-only
+- Musician - Satchel-only
+- Rancher - requires a "Kin" mod such as Kirby's Pokepack
+- Farmer - requires a "Plant" mod such as Chuck's Plants vs Zombies Mod
+- Gear - CR8-only
 - Mythic Archer
 - Mythic Fighter
+- Mythic Shuriken (Unfinished)
+  - Same as regular but with Brutal Bombstone included?
+- Iconic Fighter (Unfinished)
+  - Iconic weapon from base game - pickaxe, assass dagger
+  - Same fighter stuff as usual
+  - Is this handled by Mythic Fighter?? Would it be better to make an Iconic pack for each weapon?
+
+TODO:
+
+- Better art.
+- A modpack icon
+- Consider redoing the spawn of RPG essences to be done the "correct" way - the "wrong" way works, but does have error messages.
+
+Features I want but can't add:
+
+- There's no way to test whether a modpack exists before trying to spawn items from it. That sucks.
+- Spawning items of a specific size doesn't work (unless you make the spawning item exactly that size and replace it only with items of a similar size, which does not do what I want it to).
+- The ability to apply a "must keep this item" modifier to whatever spawns. Not sure I want this but it might be a fun puzzle mode.

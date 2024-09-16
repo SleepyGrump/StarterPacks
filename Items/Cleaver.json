@@ -5,6 +5,7 @@
   "rarity": "Common",
   "type": ["Accessory"],
   "group": ["Cleavers"],
+  "supported_characters": ["Purse", "Pochette", "Satchel"],
   "findable": false,
   "flavor": "I felt a Cleaving in my Mind- As if my Brain had split- I tried to match it- Seam by Seam- But could not make it fit.",
   "create_effects": [
