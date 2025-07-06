@@ -2,13 +2,16 @@
 
 Generates random starter packs for Backpack Hero. To use:
 
-1. Enable debugging in Mods
-2. Start a game
-3. Ctrl-S
-4. Select "Starter Packs" from the dropdown
-5. Click an item to spawn it.
-6. Right-click the spawned item.
-7. Click "Alternate Use"
+1. Find your mods folder (Steam > Manage > Browse local files > open "Mods")
+1. Put the StarterPacks in it: `git clone https://github.com/SleepyGrump/StarterPacks.git` or download and extract it, whatever you've gotta do.
+2. Enable debugging in Mods (Mods > check the little checkbox at the top that says "Debugging")
+3. Check StarterPacks in the list of mods.
+3. Start a game
+4. Ctrl-S
+5. Select "Starter Packs" from the dropdown
+6. Click an item to spawn it.
+7. Right-click the spawned item.
+8. Click "Alternate Use"
 
 Note: No consideration is given to size currently. You'll have to figure that out yourself!
 
@@ -33,15 +36,15 @@ Starter packs:
 - Gear - CR8-only
 - Mythic Archer
 - Mythic Fighter
+
+TODO:
+
 - Mythic Shuriken (Unfinished)
   - Same as regular but with Brutal Bombstone included?
 - Iconic Fighter (Unfinished)
   - Iconic weapon from base game - pickaxe, assass dagger
   - Same fighter stuff as usual
   - Is this handled by Mythic Fighter?? Would it be better to make an Iconic pack for each weapon?
-
-TODO:
-
 - Better art.
 - A modpack icon
 - Consider redoing the spawn of RPG essences to be done the "correct" way - the "wrong" way works, but does have error messages.
