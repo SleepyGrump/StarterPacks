@@ -1,8 +1,8 @@
 {
-  "name": "Archer Starter Pack",
-  "sprite": "Archer.png",
+  "name": "Mythic Archer Pack",
+  "sprite": "MythicArcher.png",
   "shape": ["X"],
-  "rarity": "Common",
+  "rarity": "Rare",
   "type": ["Accessory"],
   "group": ["Archery"],
   "findable": false,
@@ -14,16 +14,18 @@
       "create_type": "byType",
       "create_areas": ["board"],
       "create_types": ["Bow"],
-      "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon bow"
+      "create_rarities": ["Rare", "Legendary"],
+      "number_of_items": 2,
+      "description": "Creates 2 rare or legendary bows"
     },
     {
       "trigger": "onAlternateUse",
       "type": "byType",
       "create_areas": ["board"],
       "create_types": ["Shield"],
-      "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon shield"
+      "create_rarities": ["Rare", "Legendary"],
+      "number_of_items": 2,
+      "description": "Creates 2 rare or legendary shields"
     },
     {
       "trigger": "onAlternateUse",
@@ -31,13 +33,18 @@
       "create_type": "byType",
       "create_areas": ["board"],
       "create_types": ["Arrow"],
-      "description": "Creates a random arrow"
+      "create_rarities": ["Rare", "Legendary"],
+      "description": "Creates a random rare or legendary arrow"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Rogue Essence", "Short Arrow"],
-      "description": "Creates a Short Arrow and a Rogue Essence (if Chuck's RPG Classes are installed)"
+      "create_items": [
+        { "3141719250": "Rogue Essence" },
+        "Short Arrow",
+        "Short Arrow"
+      ],
+      "description": "Creates two Short Arrows and a Rogue Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

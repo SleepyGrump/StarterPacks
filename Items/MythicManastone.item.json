@@ -1,0 +1,67 @@
+{
+  "name": "Mythic Manastone",
+  "sprite": "MythicManastone.png",
+  "shape": ["X"],
+  "flavor": "A mana-hoarding rock, exactly like the black one, but spawnable!",
+  "rarity": "Legendary",
+  "type": ["ManaStone"],
+  "group": ["Magic"],
+  "findable": false,
+  "use_costs": {
+    "energy": 1,
+    "mana": 1
+  },
+  "modifiers": [
+    {
+      "trigger": "onUse",
+      "mod_area": ["adjacent", "diagonal"],
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "mod_types": ["ManaStone"],
+      "stackable": false,
+      "description": "Adjacent or diagonal Mana Stones are destroyed"
+    },
+    {
+      "trigger": "onDestroy",
+      "trigger_on_type": ["ManaStone"],
+      "trigger_area": ["adjacent", "diagonal"],
+      "effects": [
+        {
+          "type": "ItemStatusEffect",
+          "item_status_effects": [
+            {
+              "type": "AddToManaCost",
+              "value": 1,
+              "length": "permanent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trigger": "onDestroy",
+      "trigger_on_type": ["ManaStone"],
+      "trigger_area": ["adjacent", "diagonal"],
+      "effects": [
+        {
+          "type": "AddToMaxMana",
+          "value": 1
+        }
+      ],
+      "description": "Permanently add /x to max mana capacity"
+    }
+  ],
+  "item_status_effects": [
+    {
+      "type": "conductive",
+      "value": 0,
+      "length": "permanent"
+    }
+  ],
+  "manastone": {
+    "max_mana": 1
+  }
+}

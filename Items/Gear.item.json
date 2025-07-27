@@ -30,7 +30,12 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Fighter Essence", "Big Gear", "Steel Gear", "Reverser"],
+      "create_items": [
+        { "3141719250": "Fighter Essence" },
+        "Big Gear",
+        "Steel Gear",
+        "Reverser"
+      ],
       "description": "Creates a Steel Gear, a Big Gear, a Reverser, and a Fighter Essence (if Chuck's RPG Classes are installed)"
     }
   ],

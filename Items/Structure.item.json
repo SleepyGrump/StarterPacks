@@ -21,7 +21,12 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Mercenary Essence", "Brick", "Brick", "Dirt Clump"],
+      "create_items": [
+        { "3141719250": "Mercenary Essence" },
+        "Brick",
+        "Brick",
+        "Dirt Clump"
+      ],
       "description": "Creates 2 Bricks, a Dirt Clump, and a Mercenary Essence (if Chuck's RPG Classes are installed)"
     }
   ],

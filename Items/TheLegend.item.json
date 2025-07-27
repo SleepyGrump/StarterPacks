@@ -1,0 +1,92 @@
+{
+  "name": "The Legend Pack",
+  "sprite": "TheLegend.png",
+  "shape": ["X"],
+  "rarity": "Common",
+  "type": ["Accessory"],
+  "findable": false,
+  "flavor": "Legends are made, not born.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": [
+        "Weapon",
+        "Armor",
+        "Shield",
+        "Bow",
+        "Arrow",
+        "Wand",
+        "Book",
+        "Cleaver",
+        "Clothing",
+        "Helmet",
+        "Footwear",
+        "Fish",
+        "Glove",
+        "Magic",
+        "Gem",
+        "Structure",
+        "Accessory",
+        "Ring",
+        "Rune",
+        "Sigil",
+        "Carving",
+        "Component",
+        "Instrument",
+        "Shuriken",
+        "Plant",
+        "Melee",
+        "Drum",
+        "Hammer",
+        "Scary",
+        "Festive",
+        "Totem",
+        "Dart",
+        "Kin",
+        "Sap",
+        "Treat",
+        "FloppyDisk",
+        "Etching",
+        "Hymn",
+        "Fragment",
+        "Loot",
+        "Gear",
+        "Summer",
+        "Sunshine"
+      ],
+      "create_rarities": ["Legendary"],
+      "number_of_items": 1,
+      "description": "Creates one legendary item - can you build a run around it?"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_type": "trueRandom",
+      "create_areas": ["board"],
+      "create_items": [
+        { "3141719250": "Bard Essence" },
+        { "3141719250": "Eclectic Essence" },
+        { "3141719250": "Fighter Essence" },
+        { "3141719250": "Freestyle Essence - Level 1" },
+        { "3141719250": "Mage Essence" },
+        { "3141719250": "Mercenary Essence" },
+        { "3141719250": "Monk Essence - Level 1" },
+        { "3141719250": "Rogue Essence" },
+        { "3141719250": "Void Essence" }
+      ],
+      "description": "Creates a random Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

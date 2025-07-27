@@ -1,23 +1,18 @@
 {
-  "name": "Musician Starter Pack",
-  "sprite": "Musician.png",
+  "name": "Scratch Starter Pack",
+  "sprite": "Scratch.png",
   "shape": ["X"],
   "rarity": "Common",
   "type": ["Accessory"],
-  "group": ["Charmer"],
+  "group": ["Scratch"],
   "findable": false,
-  "flavor": "Music has charms to sooth a savage breast, to soften rocks, or bend a knotted oak.",
-  "supported_characters": ["Satchel"],
+  "flavor": "Hope may or may not be a Thing with Feathers. But it's definitely a Thing with Claws.",
   "create_effects": [
     {
       "trigger": "onAlternateUse",
-      "type": "byType",
-      "create_type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Instrument"],
-      "create_rarities": ["Common", "Uncommon"],
-      "number_of_items": 3,
-      "description": "Creates 3 common or uncommon instruments"
+      "create_items": ["Glove of Knives"],
+      "description": "Creates a Glove of Knives"
     },
     {
       "trigger": "onAlternateUse",
@@ -29,9 +24,18 @@
     },
     {
       "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
       "create_areas": ["board"],
-      "create_items": ["Bard Essence"],
-      "description": "Creates a Bard Essence (if Chuck's RPG Classes are installed)"
+      "create_types": ["Potion"],
+      "number_of_items": 3,
+      "description": "Creates 3 random potions"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": [{ "3141719250": "Monk Essence - Level 1" }],
+      "description": "Creates a Monk Essence - Level 1 (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

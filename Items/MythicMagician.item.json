@@ -1,0 +1,57 @@
+{
+  "name": "Mythic Magician Pack",
+  "sprite": "MythicMagician.png",
+  "shape": ["X"],
+  "rarity": "Legendary",
+  "type": ["Accessory"],
+  "group": ["Magic"],
+  "findable": false,
+  "flavor": "I am a great admirer of mystery and magic. Look at this life - all mystery and magic.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Book"],
+      "create_rarities": ["Rare", "Legendary"],
+      "description": "Creates a rare or legendary book"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Wand"],
+      "create_rarities": ["Rare", "Legendary"],
+      "description": "Creates a random rare or legendary wand"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": [
+        "Apprentice Staff",
+        "Broken Ring",
+        { "3141719250": "Mage Essence" }
+      ],
+      "description": "Creates an Apprentice Staff, a Broken Ring, and a Mage Essence (if Chuck's RPG Classes are installed)"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": ["Mythic Manastone"],
+      "description": "Creates a mythic manastone"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

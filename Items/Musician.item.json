@@ -1,22 +1,23 @@
 {
-  "name": "Fighter Starter Pack",
-  "sprite": "Fighter.png",
+  "name": "Musician Starter Pack",
+  "sprite": "Musician.png",
   "shape": ["X"],
   "rarity": "Common",
   "type": ["Accessory"],
-  "group": ["Melee"],
+  "group": ["Charmer"],
   "findable": false,
-  "flavor": "I've always been a fighter. If you tell me I can't, I'll die trying to prove you wrong.",
+  "flavor": "Music has charms to sooth a savage breast, to soften rocks, or bend a knotted oak.",
+  "supported_characters": ["Satchel"],
   "create_effects": [
     {
       "trigger": "onAlternateUse",
       "type": "byType",
       "create_type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Melee"],
+      "create_types": ["Instrument"],
       "create_rarities": ["Common", "Uncommon"],
-      "number_of_items": 2,
-      "description": "Creates 2 common or uncommon melee weapons"
+      "number_of_items": 3,
+      "description": "Creates 3 common or uncommon instruments"
     },
     {
       "trigger": "onAlternateUse",
@@ -28,17 +29,9 @@
     },
     {
       "trigger": "onAlternateUse",
-      "type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Armor"],
-      "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon armor"
-    },
-    {
-      "trigger": "onAlternateUse",
-      "create_areas": ["board"],
-      "create_items": ["Fighter Essence"],
-      "description": "Creates a Fighter Essence (if Chuck's RPG Classes are installed)"
+      "create_items": [{ "3141719250": "Bard Essence" }],
+      "description": "Creates a Bard Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

@@ -31,15 +31,22 @@ Starter packs:
 - Holy
 - Drummer - Satchel-only
 - Musician - Satchel-only
-- Rancher - requires a "Kin" mod such as Kirby's Pokepack
+- Rancher - requires a "Kin" mod such as Kirby's Pokepack or one of Chuck's creature mods
 - Farmer - requires a "Plant" mod such as Chuck's Plants vs Zombies Mod
 - Gear - CR8-only
 - Mythic Archer
 - Mythic Fighter
+- Mythic Magician
+- The Legend - not a "pack" per se, will spawn a single legendary item and a random essence. It's up to you to make it work!
+
+Two extra items, required in order to make the Magic starter packs work:
+
+- Desaturated manastone - just your standard common manastone, reskinned
+- Mythic manastone - just a Black Manastone reskinned
 
 TODO:
 
-- Mythic Shuriken (Unfinished)
+- Mythic Shuriken
   - Same as regular but with Brutal Bombstone included?
 - Iconic Fighter (Unfinished)
   - Iconic weapon from base game - pickaxe, assass dagger
@@ -47,10 +54,8 @@ TODO:
   - Is this handled by Mythic Fighter?? Would it be better to make an Iconic pack for each weapon?
 - Better art.
 - A modpack icon
-- Consider redoing the spawn of RPG essences to be done the "correct" way - the "wrong" way works, but does have error messages.
 
 Features I want but can't add:
 
 - There's no way to test whether a modpack exists before trying to spawn items from it. That sucks.
 - Spawning items of a specific size doesn't work (unless you make the spawning item exactly that size and replace it only with items of a similar size, which does not do what I want it to).
-- The ability to apply a "must keep this item" modifier to whatever spawns. Not sure I want this but it might be a fun puzzle mode.

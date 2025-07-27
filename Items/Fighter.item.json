@@ -1,8 +1,8 @@
 {
-  "name": "Mythic Fighter Pack",
-  "sprite": "MythicFighter.png",
+  "name": "Fighter Starter Pack",
+  "sprite": "Fighter.png",
   "shape": ["X"],
-  "rarity": "Rare",
+  "rarity": "Common",
   "type": ["Accessory"],
   "group": ["Melee"],
   "findable": false,
@@ -14,42 +14,30 @@
       "create_type": "byType",
       "create_areas": ["board"],
       "create_types": ["Melee"],
-      "create_rarities": ["Rare"],
+      "create_rarities": ["Common", "Uncommon"],
       "number_of_items": 2,
-      "description": "Creates 2 rare melee weapons"
-    },
-    {
-      "trigger": "onAlternateUse",
-      "type": "byType",
-      "create_type": "byType",
-      "create_areas": ["board"],
-      "create_types": ["Melee"],
-      "create_rarities": ["Legendary"],
-      "number_of_items": 2,
-      "description": "Creates 2 legendary melee weapons"
+      "description": "Creates 2 common or uncommon melee weapons"
     },
     {
       "trigger": "onAlternateUse",
       "type": "byType",
       "create_areas": ["board"],
       "create_types": ["Shield"],
-      "create_rarities": ["Rare", "Legendary"],
-      "number_of_items": 2,
-      "description": "Creates 2 rare or legendary shields"
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon shield"
     },
     {
       "trigger": "onAlternateUse",
       "type": "byType",
       "create_areas": ["board"],
       "create_types": ["Armor"],
-      "create_rarities": ["Uncommon", "Rare", "Legendary"],
-      "number_of_items": 2,
-      "description": "Creates 2 uncommon, rare, or legendary armors"
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon armor"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Fighter Essence"],
+      "create_items": [{ "3141719250": "Fighter Essence" }],
       "description": "Creates a Fighter Essence (if Chuck's RPG Classes are installed)"
     }
   ],

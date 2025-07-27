@@ -41,7 +41,7 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Fighter Essence"],
+      "create_items": [{ "3141719250": "Fighter Essence" }],
       "description": "Creates a Fighter Essence (if Chuck's RPG Classes are installed)"
     }
   ],

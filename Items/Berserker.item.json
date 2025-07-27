@@ -21,7 +21,13 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Fighter Essence", "Hatchet", "Shiv", "Hatchet", "Shiv"],
+      "create_items": [
+        { "3141719250": "Fighter Essence" },
+        "Hatchet",
+        "Shiv",
+        "Hatchet",
+        "Shiv"
+      ],
       "description": "Creates 2 Hatchets, 2 Shivs, and a Fighter Essence (if Chuck's RPG Classes are installed)"
     }
   ],

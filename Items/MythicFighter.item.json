@@ -1,0 +1,67 @@
+{
+  "name": "Mythic Fighter Pack",
+  "sprite": "MythicFighter.png",
+  "shape": ["X"],
+  "rarity": "Rare",
+  "type": ["Accessory"],
+  "group": ["Melee"],
+  "findable": false,
+  "flavor": "I've always been a fighter. If you tell me I can't, I'll die trying to prove you wrong.",
+  "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Melee"],
+      "create_rarities": ["Rare"],
+      "number_of_items": 2,
+      "description": "Creates 2 rare melee weapons"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Melee"],
+      "create_rarities": ["Legendary"],
+      "number_of_items": 2,
+      "description": "Creates 2 legendary melee weapons"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Shield"],
+      "create_rarities": ["Rare", "Legendary"],
+      "number_of_items": 2,
+      "description": "Creates 2 rare or legendary shields"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Armor"],
+      "create_rarities": ["Uncommon", "Rare", "Legendary"],
+      "number_of_items": 2,
+      "description": "Creates 2 uncommon, rare, or legendary armors"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "create_areas": ["board"],
+      "create_items": [{ "3141719250": "Fighter Essence" }],
+      "description": "Creates a Fighter Essence (if Chuck's RPG Classes are installed)"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onAlternateUse",
+      "effects": [
+        {
+          "type": "Destroy"
+        }
+      ],
+      "stackable": false
+    }
+  ]
+}

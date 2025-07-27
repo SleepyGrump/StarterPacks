@@ -1,29 +1,23 @@
 {
-  "name": "Rancher Starter Pack",
-  "sprite": "Rancher.png",
+  "name": "Cleaver Starter Pack",
+  "sprite": "Cleaver.png",
   "shape": ["X"],
-  "rarity": "Uncommon",
+  "rarity": "Common",
   "type": ["Accessory"],
+  "group": ["Cleavers"],
+  "supported_characters": ["Purse", "Pochette", "Satchel"],
   "findable": false,
-  "flavor": "Until one has loved an animal a part of one's soul remains unawakened.",
+  "flavor": "I felt a Cleaving in my Mind- As if my Brain had split- I tried to match it- Seam by Seam- But could not make it fit.",
   "create_effects": [
     {
       "trigger": "onAlternateUse",
       "type": "byType",
       "create_type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Kin"],
+      "create_types": ["Cleaver"],
       "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon kin (if available)"
-    },
-    {
-      "trigger": "onAlternateUse",
-      "type": "byType",
-      "create_type": "byType",
-      "create_areas": ["board"],
-      "create_types": ["Fish"],
-      "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon fish"
+      "number_of_items": 2,
+      "description": "Creates 2 common or uncommon cleavers"
     },
     {
       "trigger": "onAlternateUse",
@@ -38,15 +32,23 @@
       "type": "byType",
       "create_type": "byType",
       "create_areas": ["board"],
+      "create_types": ["Cleaver"],
+      "create_rarities": ["Uncommon", "Rare"],
+      "description": "Creates a random uncommon or rare cleaver"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_areas": ["board"],
       "create_types": ["Armor"],
       "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon Armor"
+      "description": "Creates a common or uncommon armor"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Eclectic Essence", "Shiv", "Shiv"],
-      "description": "Creates 2 Shivs and an Eclectic Essence (if Chuck's RPG Classes are installed)"
+      "create_items": [{ "3141719250": "Rogue Essence" }],
+      "description": "Creates a Rogue Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

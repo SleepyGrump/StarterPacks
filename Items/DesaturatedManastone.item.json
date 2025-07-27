@@ -1,0 +1,21 @@
+{
+  "name": "Desaturated Manastone",
+  "sprite": ["DesaturatedManastoneFull.png", "DesaturatedManastoneEmpty.png"],
+  "shape": ["X"],
+  "flavor": "A cautiously useful bit of manastone, oddly desaturated. Exactly like a standard manastone, but spawnable!",
+  "rarity": "Common",
+  "type": ["ManaStone"],
+  "group": ["Magic"],
+  "findable": false,
+  "animation": "Attack",
+  "item_status_effects": [
+    {
+      "type": "conductive",
+      "value": 0,
+      "length": "permanent"
+    }
+  ],
+  "manastone": {
+      "max_mana":1
+  }
+}

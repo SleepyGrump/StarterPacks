@@ -1,23 +1,31 @@
 {
-  "name": "Cleaver Starter Pack",
-  "sprite": "Cleaver.png",
+  "name": "Farmer Starter Pack",
+  "sprite": "Farmer.png",
   "shape": ["X"],
-  "rarity": "Common",
+  "rarity": "Uncommon",
   "type": ["Accessory"],
-  "group": ["Cleavers"],
-  "supported_characters": ["Purse", "Pochette", "Satchel"],
   "findable": false,
-  "flavor": "I felt a Cleaving in my Mind- As if my Brain had split- I tried to match it- Seam by Seam- But could not make it fit.",
+  "flavor": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
   "create_effects": [
     {
       "trigger": "onAlternateUse",
       "type": "byType",
       "create_type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Cleaver"],
+      "create_types": ["Plant"],
+      "create_rarities": ["Common", "Uncommon"],
+      "number_of_items": 3,
+      "description": "Creates 3 common or uncommon plants"
+    },
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Fish"],
       "create_rarities": ["Common", "Uncommon"],
       "number_of_items": 2,
-      "description": "Creates 2 common or uncommon cleavers"
+      "description": "Creates 2 common or uncommon fish"
     },
     {
       "trigger": "onAlternateUse",
@@ -32,23 +40,15 @@
       "type": "byType",
       "create_type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Cleaver"],
-      "create_rarities": ["Uncommon", "Rare"],
-      "description": "Creates a random uncommon or rare cleaver"
-    },
-    {
-      "trigger": "onAlternateUse",
-      "type": "byType",
-      "create_areas": ["board"],
       "create_types": ["Armor"],
       "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon armor"
+      "description": "Creates a common or uncommon Armor"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Rogue Essence"],
-      "description": "Creates a Rogue Essence (if Chuck's RPG Classes are installed)"
+      "create_items": [{ "3141719250": "Eclectic Essence" }, "Wooden Knife"],
+      "description": "Creates a Wooden Knife and an Eclectic Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

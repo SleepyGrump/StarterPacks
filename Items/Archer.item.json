@@ -1,13 +1,22 @@
 {
-  "name": "Shuriken Starter Pack",
-  "sprite": "Shuriken.png",
+  "name": "Archer Starter Pack",
+  "sprite": "Archer.png",
   "shape": ["X"],
   "rarity": "Common",
   "type": ["Accessory"],
-  "group": ["Shuriken"],
+  "group": ["Archery"],
   "findable": false,
-  "flavor": "Surrender or feel the sting of the shuriken!",
+  "flavor": "If you would hit the mark, you must aim a little above it.",
   "create_effects": [
+    {
+      "trigger": "onAlternateUse",
+      "type": "byType",
+      "create_type": "byType",
+      "create_areas": ["board"],
+      "create_types": ["Bow"],
+      "create_rarities": ["Common", "Uncommon"],
+      "description": "Creates a common or uncommon bow"
+    },
     {
       "trigger": "onAlternateUse",
       "type": "byType",
@@ -21,15 +30,14 @@
       "type": "byType",
       "create_type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Shuriken"],
-      "number_of_items": 5,
-      "description": "Creates 5 random shuriken"
+      "create_types": ["Arrow"],
+      "description": "Creates a random arrow"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Rogue Essence", "Velvet Bag"],
-      "description": "Creates a Velvet Bag and a Rogue Essence (if Chuck's RPG Classes are installed)"
+      "create_items": [{ "3141719250": "Rogue Essence" }, "Short Arrow"],
+      "description": "Creates a Short Arrow and a Rogue Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [

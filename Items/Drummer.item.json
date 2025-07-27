@@ -30,7 +30,7 @@
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Bard Essence"],
+      "create_items": [{ "3141719250": "Bard Essence" }],
       "description": "Creates a Bard Essence (if Chuck's RPG Classes are installed)"
     }
   ],

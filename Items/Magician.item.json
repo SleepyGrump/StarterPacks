@@ -28,25 +28,23 @@
     },
     {
       "trigger": "onAlternateUse",
-      "type": "byType",
-      "create_type": "byType",
       "create_areas": ["board"],
-      "create_types": ["Manastone"],
-      "create_rarities": ["Common", "Uncommon"],
-      "number_of_items": 2,
-      "description": "Creates 2 random common or uncommon manastones"
-    },
-    {
-      "trigger": "onAlternateUse",
-      "create_areas": ["board"],
-      "create_items": ["Manastone", "Large Manastone", "Huge Manastone"],
-      "description": "Creates three common manastones."
+      "create_items": [
+        "Desaturated Manastone",
+        "Desaturated Manastone",
+        "Desaturated Manastone"
+      ],
+      "description": "Creates three desaturated manastones."
     },
 
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": ["Apprentice Staff", "Broken Ring", "Mage Essence"],
+      "create_items": [
+        "Apprentice Staff",
+        "Broken Ring",
+        { "3141719250": "Mage Essence" }
+      ],
       "description": "Creates an Apprentice Staff, a Broken Ring, and a Mage Essence (if Chuck's RPG Classes are installed)"
     }
   ],
