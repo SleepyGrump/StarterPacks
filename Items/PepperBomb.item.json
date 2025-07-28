@@ -1,0 +1,31 @@
+{
+  "name": "Pepper Bomb",
+  "sprite": "PepperBomb.png",
+  "shape": ["X"],
+  "rarity": "Legendary",
+  "type": ["Weapon"],
+  "supported_characters": ["Purse", "Satchel", "CR8", "Pochette"],
+  "animation": "Attack",
+  "combat_effects": [
+    {
+      "trigger": "onDestroy",
+      "trigger_area": ["board"],
+      "type": "Damage",
+      "value": 1,
+      "target": "allEnemies"
+    }
+  ],
+  "modifiers": [
+    {
+      "trigger": "onDestroy",
+      "trigger_area": ["board"],
+      "effects": [{ "type": "Damage", "value": 0.1, "target": "allEnemies" }],
+      "stackable": true,
+      "length": "permanent"
+    }
+  ],
+  "item_status_effects": [
+    { "type": "projectile", "value": 0.0, "length": "permanent" },
+    { "type": "canBeForged", "value": 3, "length": "permanent" }
+  ]
+}

@@ -30,6 +30,7 @@
         "Mythic Fighter Pack",
         "Mythic Archer Pack",
         "Mythic Magician Pack",
+        "Mythic Shuriken Pack",
         "The Legend Pack"
       ],
       "description": "Creates a random starting pack"

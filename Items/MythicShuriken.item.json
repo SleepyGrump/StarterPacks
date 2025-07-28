@@ -1,20 +1,20 @@
 {
-  "name": "Shuriken Starter Pack",
-  "sprite": "Shuriken.png",
+  "name": "Mythic Shuriken Pack",
+  "sprite": "MythicShuriken.png",
   "shape": ["X"],
-  "rarity": "Common",
+  "rarity": "Legendary",
   "type": ["Accessory"],
   "group": ["Shuriken"],
   "findable": false,
-  "flavor": "Surrender or feel the sting of the shuriken!",
+  "flavor": "A master at work!",
   "create_effects": [
     {
       "trigger": "onAlternateUse",
       "type": "byType",
       "create_areas": ["board"],
       "create_types": ["Shield"],
-      "create_rarities": ["Common", "Uncommon"],
-      "description": "Creates a common or uncommon shield"
+      "create_rarities": ["Uncommon", "Rare", "Legendary"],
+      "description": "Creates an uncommon, rare, or legendary shield"
     },
     {
       "trigger": "onAlternateUse",
@@ -22,14 +22,14 @@
       "create_type": "byType",
       "create_areas": ["board"],
       "create_types": ["Shuriken"],
-      "number_of_items": 3,
-      "description": "Creates 3 random shuriken"
+      "number_of_items": 5,
+      "description": "Creates 5 random shuriken"
     },
     {
       "trigger": "onAlternateUse",
       "create_areas": ["board"],
-      "create_items": [{ "3141719250": "Rogue Essence" }, "Ninja Bag", "Dagger"],
-      "description": "Creates a Ninja Bag, a Dagger, and a Rogue Essence (if Chuck's RPG Classes are installed)"
+      "create_items": [{ "3141719250": "Rogue Essence" }, "Velvet Bag", "Pepper Bomb"],
+      "description": "Creates a Velvet Bag, a Pepper Bomb, and a Rogue Essence (if Chuck's RPG Classes are installed)"
     }
   ],
   "modifiers": [
