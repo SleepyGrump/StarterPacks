@@ -15,8 +15,6 @@ Generates random starter packs for Backpack Hero. To use:
 
 Note: No consideration is given to size currently. You'll have to figure that out yourself! That's why extra items spawn - to give you a choice between them in case they don't fit.
 
-Extra item: A Random Starter Pack - generates an entirely random starter pack from the list below.
-
 Starter packs:
 
 - Archery
@@ -40,18 +38,23 @@ Starter packs:
 - Mythic Shuriken
 - The Legend - not a "pack" per se, will spawn a single legendary item and a random essence. It's up to you to make it work!
 
-Two extra items, required in order to make the Magic starter packs work:
+Four extra items:
 
+- A Random Starter Pack - generates a random starter pack from the list. Because sometimes, I'm looking for inspiration.
 - Desaturated manastone - just your standard common manastone, reskinned (because the original isn't spawnable by item creator). It's listed as Unfindable, yet still shows up the same way ordinary manastones do, which is mildly annoying.
-- Mythic manastone - just a Black Manastone reskinned (again, just to make it be spawnable by item creator). Might show up in game due to manastone specialness.
+- Mythic manastone - just a Black Manastone reskinned (again, just to make it be spawnable by item creator). Might also show up in game due to manastone specialness.
+- Pepper Bomb, because Mythic Shuriken wasn't mythic enough with just the Velvet Bag. Needed some escalation. (I specifically chose to keep it as a weapon because of Brutal Bombstone. One of these things is high, but doesn't scale; the other scales, but starts out low. But hey, you get it at the start of the game, so there's time! No need for the two to be cross-compatible.)
 
 TODO:
 
 - Better art. Always.
 - A modpack icon
+- Testing and tweaks
+ - Would like a better structure-themed weapon.
+ - Need to ensure each pack comes with a survivable amount of things for the first two floors.
 
 Features I want but can't add:
 
-- There's no way to test whether a modpack exists before trying to spawn items from it. That sucks.
+- There's no way to test whether a modpack exists before trying to spawn items from it. That sucks. My load logs are full of "will not work!" and the like, and yet it works. :P I worry, because items that "will not work!" are prone to freezing the interface entirely, but so far I've only encountered that once and a restart fixed it (plus, I have extensive mods that might also have caused the issue).
 - Spawning items of a specific size doesn't work for this. Example: Replacing a Wooden Sword-sized item with any sameSizeItem sometimes results in the Aged Shield because, uh. It's 3 squares... so same exact size, if not same dimensions. :/ Plus, it's not limited by type. You'll get *any* item of that size, even if you specify "byType" and "Melee". So, no joy there. (Yes, I dug into this. Again.)
 - I'd love to actually make these items available in the game itself at Matthew. Not currently possible, however, so this is the workaround.
